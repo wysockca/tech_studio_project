@@ -14,7 +14,7 @@ $dbpassword = "sxRaM*y74c4";
 
 $pdo = new PDO($dsn, $dbusername, $dbpassword); 
 
-$stmt = $pdo->prepare("UPDATE `spellentry` SET `spell1` = '$spell1', `spell2` = '$spell2', `spell3` = '$spell3', `spell4` = '$spell4' WHERE `spellentry`.`id` = $id;");
+$stmt = $pdo->prepare("INSERT INTO `spellentry` (`spell1`, `spell2`, `spell3`, `spell4`) VALUES ('$spell1', '$spell2', '$spell3', '$spell4'); ");
 
 $stmt->execute();
 
