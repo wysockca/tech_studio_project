@@ -19,7 +19,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 	<body>
 		<h1>You found Spell 2!</h1>
 		<img src="assets/spell1.jpg" />
-		<form action="record-spell.php" method="POST">
+		<form action="record-spell2.php" method="POST">
 			<input type="hidden" name="spell2" value="1" />
 			<input type="submit" value="Learn Spell" />
 		</form>

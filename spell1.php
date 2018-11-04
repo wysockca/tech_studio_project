@@ -2,8 +2,6 @@
 
 session_start();
 
-$spell1 = $_POST['spell1'];
-
 $dsn = "mysql:host=localhost;dbname=wysockca_spellbook;charset=utf8mb4";
 $dbusername = "wysockca";
 $dbpassword = "sxRaM*y74c4";
@@ -21,7 +19,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 	<body>
 		<h1>You found Spell 1!</h1>
 		<img src="assets/spell1.jpg" />
-		<form action="record-spell.php" method="POST">
+		<form action="record-spell1.php" method="POST">
 			<input type="hidden" name="spell1" value="1" />
 			<input type="submit" value="Learn Spell" />
 		</form>
