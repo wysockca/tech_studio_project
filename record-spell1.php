@@ -12,7 +12,7 @@ $dbpassword = "sxRaM*y74c4";
 
 $pdo = new PDO($dsn, $dbusername, $dbpassword); 
 
-$stmt = $pdo->prepare("UPDATE `spellentry` SET `spell1` = '$spell1' WHERE `spellentry`.`id` = $id;");
+$stmt = $pdo->prepare("UPDATE `userinfo` SET `spell1` = '$spell1' WHERE `userinfo`.`id` = $id;");
 $stmt->execute();
 
 header("Location: dashboard.php");

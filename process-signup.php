@@ -11,7 +11,7 @@ $dbpassword = "sxRaM*y74c4";
 
 $pdo = new PDO($dsn, $dbusername, $dbpassword); 
 
-$stmt = $pdo->prepare("INSERT INTO `spellentry` (`id`, `name`, `username`, `email`, `password`) VALUES (NULL, '$name', '$username', '$email', '$password'); ");
+$stmt = $pdo->prepare("INSERT INTO `userinfo` (`id`, `name`, `username`, `email`, `password`) VALUES (NULL, '$name', '$username', '$email', '$password'); ");
 
 $stmt->execute();
 

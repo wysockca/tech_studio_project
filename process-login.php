@@ -13,7 +13,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 
 $stmt = $pdo->prepare("
-	SELECT * FROM `spellentry` 
+	SELECT * FROM `userinfo` 
 	WHERE `username` = '$username' 
 	AND `password` = '$password'");
 
