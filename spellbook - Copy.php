@@ -15,19 +15,17 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 $id = $_SESSION['id'];
 
 $stmt = $pdo->prepare("SELECT * FROM `userinfo` WHERE `id` = '$id'");
-$stmt->execute();
-$row = $stmt->fetch();
 
-$stmt2 = $pdo->prepare("SELECT * FROM `levels` WHERE `id` = '$id'");
-$stmt2->execute();
-$row2 = $stmt2->fetch();
+$stmt->execute();
+
+$row = $stmt->fetch();
 
 ?>
 
 <!doctype html>
 <html>
 	<head>
-		<title>Spellbound: Enchanted Ascent</title>
+		<title>Spellbook - Spellbound: Enchanted Ascent</title>
 		<meta charset="utf-8" />
 
 		<link rel="stylesheet" type="text/css" href="css/main.css"> 
@@ -36,21 +34,28 @@ $row2 = $stmt2->fetch();
 	<header>
         <nav>
             <ul>
-            <li><a href="edit-profile.php">Home</a></li>            	
-            <li><a href="logout.php">Logout</a></li>
+            <li><a href = "dashboard.php">Home</a></li> 
+            <li><a href = "edit-profile.php">Edit Profile</a></li>           	
+            <li><a href = "logout.php">Logout</a></li>
             </ul>
         </nav>		
 	</header>
 	<main>
-		<h1><?php echo($row["username"]); ?></h1>
-		<h2><?php echo($row2["level"]); ?></h2>
-		<img src="assets/<?php echo($row2["image"]); ?>" />
-		<p><a href="spellbook.php">Spellbook</a></p>
+		<h1>Spell Book</h1>
+		<?php if (($row["spell1"]) == '1'){ ?>
+				<p>Spell 1</p>
+		<?php } 
+			if (($row["spell2"]) == '1'){ ?>
+			<p>Spell 2</p>
+		<?php }
+			if (($row["spell3"]) == '1'){ ?>
+			<p>Spell 3</p>	
+		<?php }
+		if (($row["spell4"]) == '1'){ ?>
+			<p>Spell 4</p>
+		<?php } ?>	
+		<p><a href="">Cast Spell</a></p>
 	</main>
-	<footer>
-		<p>This site uses cookies</p>
-	</footer>
 	</body>
 </html>
-
 <?php } ?>
