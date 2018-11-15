@@ -3,13 +3,14 @@
 session_start();
 
 if($_SESSION['logged-in'] == false){
-	echo("You are not allowed to view this page");
+	echo("Please Sign up to begin your enchanted ascent!");
 	?><a href="login.php">Go to login</a><?php
 }else{
 
 $dsn = "mysql:host=localhost;dbname=wysockca_spellbook;charset=utf8mb4";
 $dbusername = "wysockca";
 $dbpassword = "sxRaM*y74c4";
+
 $pdo = new PDO($dsn, $dbusername, $dbpassword); 
 
 $id = $_SESSION['id'];
@@ -17,10 +18,19 @@ $id = $_SESSION['id'];
 $stmt = $pdo->prepare("SELECT * FROM `userinfo` WHERE `id` = '$id'");
 $stmt->execute();
 $row = $stmt->fetch();
+//selecting all information about the user based on their id
 
-$stmt2 = $pdo->prepare("SELECT * FROM `levels` WHERE `id` = '$id'");
-$stmt2->execute();
-$row2 = $stmt2->fetch();
+$level = $row["level_id"];
+
+$stmt3 = $pdo->prepare("SELECT * FROM `levels` WHERE `id` = '$level'");
+$stmt3->execute();
+$row3 = $stmt3->fetch();
+//selecting the level information based on the users level
+
+$stmt4 = $pdo->prepare("SELECT * FROM `levels-tower` WHERE `levelid` = '$level'");
+$stmt4->execute();
+$row4 = $stmt4->fetch();
+//selecting the tower based on the users level
 
 ?>
 
@@ -36,15 +46,17 @@ $row2 = $stmt2->fetch();
 	<header>
         <nav>
             <ul>
-            <li><a href="edit-profile.php">Home</a></li>            	
+            <li><a href="dashboard.php">Home</a></li> 
+            <li><a href="edit-profile.php">Edit Profile</a></li>            	
             <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>		
 	</header>
 	<main>
 		<h1><?php echo($row["username"]); ?></h1>
-		<h2><?php echo($row2["level"]); ?></h2>
-		<img id="avatar" src="assets/<?php echo($row2["image"]); ?>" />
+		<h2>Current Level: <?php echo($row3["level"]); ?></h2>
+		<img id="tower" src="assets/<?php echo($row4["image"]); ?>" />
+		<img id="avatar" src="assets/<?php echo($row3["image"]); ?>" />
 		<p><a href="spellbook.php">Spellbook</a></p>
 	</main>
 	<footer>
