@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 10, 2018 at 06:32 PM
+-- Generation Time: Nov 15, 2018 at 04:48 PM
 -- Server version: 5.5.61-cll
--- PHP Version: 5.6.30
+-- PHP Version: 7.2.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -39,10 +39,32 @@ CREATE TABLE `levels` (
 --
 
 INSERT INTO `levels` (`id`, `level`, `image`) VALUES
-(1, 'Apprentice', ''),
-(2, 'Magician', ''),
-(3, 'Sorcerer', ''),
-(4, 'Grand Wizard', '');
+(1, 'Apprentice', 'level1.svg'),
+(2, 'Magician', 'level2.svg'),
+(3, 'Sorcerer', 'level3.svg'),
+(4, 'Grand Wizard', 'level4.svg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `levels-tower`
+--
+
+CREATE TABLE `levels-tower` (
+  `id` int(11) NOT NULL,
+  `levelid` int(11) NOT NULL,
+  `image` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `levels-tower`
+--
+
+INSERT INTO `levels-tower` (`id`, `levelid`, `image`) VALUES
+(1, 1, 'tower-spell1.svg'),
+(2, 2, 'tower-spell2.svg'),
+(3, 3, 'tower-spell3.svg'),
+(4, 4, 'tower-spell4.svg');
 
 -- --------------------------------------------------------
 
@@ -97,10 +119,10 @@ CREATE TABLE `userinfo` (
 --
 
 INSERT INTO `userinfo` (`id`, `name`, `email`, `username`, `password`, `spell1`, `spell2`, `spell3`, `spell4`, `level_id`) VALUES
-(1, 'user', 'user@user.com', 'user', 'user', 1, 1, 1, 1, 1),
-(2, 'user2', 'user2@user2.com', 'user2', 'user2', 1, 1, 1, 1, 2),
-(14, 'test', 'test@email.com', 'test', 'test', 0, 0, 0, 0, 0),
-(15, 'Carly', 'wysockca@sheridancollege.ca', 'wysockca', 'password', 0, 0, 0, 0, 0);
+(1, 'user', 'user@user.com', 'user', 'user', 1, 0, 0, 0, 1),
+(2, 'user2', 'user2@user2.com', 'user2', 'user2', 1, 1, 0, 0, 2),
+(14, 'test', 'test@email.com', 'test', 'test', 0, 0, 0, 0, 3),
+(15, 'Carly', 'wysockca@sheridancollege.ca', 'wysockca', 'password', 0, 0, 0, 0, 4);
 
 --
 -- Indexes for dumped tables
@@ -110,6 +132,12 @@ INSERT INTO `userinfo` (`id`, `name`, `email`, `username`, `password`, `spell1`,
 -- Indexes for table `levels`
 --
 ALTER TABLE `levels`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `levels-tower`
+--
+ALTER TABLE `levels-tower`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -129,6 +157,12 @@ ALTER TABLE `userinfo`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `levels-tower`
+--
+ALTER TABLE `levels-tower`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `spellentry`
