@@ -13,8 +13,10 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Spell 2</title>
+		<title>Learn Spell - Spellbound: Enchanted Ascent</title>
 		<meta charset="UTF-8" />
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
 		<h1>You found Spell 2!</h1>
