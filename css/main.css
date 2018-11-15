@@ -8,8 +8,7 @@ html{
 body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	background-repeat: no-repeat;
-	background-image: linear-gradient(#431C5B, #852064, #9A1B4E);
+	background-repeat: no-repeat;background-image: linear-gradient(#431C5B, #852064, #9A1B4E);
 
 
 }
@@ -38,6 +37,11 @@ main{
 h1, h2, p, #avatar {
 	display: flex;
 	justify-content: center;
+}
+
+#avatar{
+  	height: 30%;
+  	width: 30%;
 }
 
 
