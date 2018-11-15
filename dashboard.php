@@ -44,7 +44,7 @@ $row2 = $stmt2->fetch();
 	<main>
 		<h1><?php echo($row["username"]); ?></h1>
 		<h2><?php echo($row2["level"]); ?></h2>
-		<img src="assets/<?php echo($row2["image"]); ?>" />
+		<img id="avatar" src="assets/<?php echo($row2["image"]); ?>" />
 		<p><a href="spellbook.php">Spellbook</a></p>
 	</main>
 	<footer>

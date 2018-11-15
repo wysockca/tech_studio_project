@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Domine|Roboto');
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+h1{
+	font-family: 'Domine', serif;
+}
+
+ul{
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	margin: none;
+	padding: none;
+}
+
+li{
+	padding-left: 10px;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+h1, h2, p, #avatar {
+	display: flex;
+	justify-content: center;
+}
+
+
