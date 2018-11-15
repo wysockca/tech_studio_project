@@ -11,8 +11,10 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>IMM HTML</title>
+		<title>Success! - Spellbound: Enchanted Ascent</title>
 		<meta charset="UTF-8" />
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
 		<p>Congratulations! You've successfully signed up.</p>
