@@ -15,10 +15,14 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 $id = $_SESSION['id'];
 
 $stmt = $pdo->prepare("SELECT * FROM `userinfo` WHERE `id` = '$id'");
-
 $stmt->execute();
-
 $row = $stmt->fetch();
+
+$level = $row["level_id"];
+
+$stmt3 = $pdo->prepare("SELECT * FROM `levels` WHERE `id` = '$level'");
+$stmt3->execute();
+$row3 = $stmt3->fetch();
 
 ?>
 
@@ -41,7 +45,11 @@ $row = $stmt->fetch();
         </nav>		
 	</header>
 	<main>
+		<h1><?php echo($row["username"]); ?></h1>
+		<h2>Current Level: <?php echo($row3["level"]); ?></h2>		
+		
 		<h1>Spell Book</h1>
+		<img id="spellbook" src="assets/spellbook-01.svg" />
 		<?php if (($row["spell1"]) == '1'){ ?>
 				<p>Spell 1</p>
 		<?php } 
