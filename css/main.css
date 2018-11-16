@@ -8,13 +8,19 @@ html{
 body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	background-repeat: no-repeat;background-image: linear-gradient(#431C5B, #852064, #9A1B4E);
-
-
+	background-image: linear-gradient(#431C5B, #852064 75%, #9A1B4E);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: #9A1B4E;
 }
 
 h1{
 	font-family: 'Domine', serif;
+	color:#fff;
+}
+
+h2{
+	color:#fff;
 }
 
 ul{
@@ -34,14 +40,23 @@ main{
 	flex-direction: column;
 }
 
-h1, h2, p, #avatar {
+h1, h2, p {
 	display: flex;
 	justify-content: center;
 }
 
-#avatar{
+#tower{
   	height: 30%;
   	width: 30%;
+  	display: flex;
+  	justify-content: space-between;
+}
+
+#avatar{
+  	height: 20%;
+  	width: 20%;
+  	display: flex;
+  	justify-content: space-between;
 }
 
 
