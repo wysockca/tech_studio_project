@@ -1,7 +1,7 @@
 <?php 
 
 session_start();
-if ($_SESSION['logged-in'] = true;){
+if ($_SESSION['logged-in'] == true;){
 
 $id = $_SESSION['id'];
 
