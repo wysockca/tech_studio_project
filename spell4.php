@@ -2,6 +2,8 @@
 
 session_start();
 
+if ($_SESSION['logged-in'] == true;){
+
 $dsn = "mysql:host=localhost;dbname=wysockca_spellbook;charset=utf8mb4";
 $dbusername = "wysockca";
 $dbpassword = "sxRaM*y74c4";
@@ -27,3 +29,10 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		</form>
 	</body>
 </html>
+
+<?php
+}else{
+	//redirect to login page if invalid
+	header("Location: login.php");
+}
+?>
