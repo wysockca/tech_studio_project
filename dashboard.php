@@ -55,9 +55,9 @@ $row4 = $stmt4->fetch();
 	<main>
 		<h1><?php echo($row["username"]); ?></h1>
 		<h2>Current Level: <?php echo($row3["level"]); ?></h2>
-		<img id="tower" src="assets/<?php echo($row4["image"]); ?>" />
-		<img id="avatar" src="assets/<?php echo($row3["image"]); ?>" />
-		<p><a href="spellbook.php">Spellbook</a></p>
+		<div id="tower"><img src="assets/<?php echo($row4["image"]); ?>" /></div>
+		<div id="avatar"><img id="avatar" src="assets/<?php echo($row3["image"]); ?>" /></div>
+		<a id="sb-link" href="spellbook.php">Spellbook</a>
 	</main>
 	<footer>
 		<p>This site uses cookies</p>
