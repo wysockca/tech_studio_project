@@ -45,10 +45,7 @@ $row3 = $stmt3->fetch();
         </nav>		
 	</header>
 	<main>
-		<h1><?php echo($row["username"]); ?></h1>
-		<h2>Current Level: <?php echo($row3["level"]); ?></h2>		
-		
-		<h1>Spell Book</h1>
+		<h1>My Spell Book</h1>
 		<div id="spellbook"><img src="assets/spellbook-01.svg" /></div>
 		<?php if (($row["spell1"]) == '1'){ ?>
 			<p id="spell1">Spell 1</p>
