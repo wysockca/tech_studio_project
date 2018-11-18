@@ -55,6 +55,7 @@ $row4 = $stmt4->fetch();
 	<main>
 		<h1><?php echo($row["username"]); ?></h1>
 		<h2>Current Level: <?php echo($row3["level"]); ?></h2>
+		<div id="moon"><img src="assets/moon.svg" /></div>
 		<div id="tower"><img src="assets/<?php echo($row4["image"]); ?>" /></div>
 		<div id="avatar"><img id="avatar" src="assets/<?php echo($row3["image"]); ?>" /></div>
 		<a id="sb-link" href="spellbook.php">Spellbook</a>
