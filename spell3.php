@@ -21,6 +21,9 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
+		<header>
+			<a href="dashboard.php"><img id="logo" src="assets/logo.svg" /></a>	
+		</header>
 		<h1>You found Spell 3!</h1>
 		<img src="assets/spell3.svg" />
 		<form action="record-spell3.php" method="POST">
