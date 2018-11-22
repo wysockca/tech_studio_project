@@ -36,13 +36,17 @@ $row3 = $stmt3->fetch();
 	</head>
 	<body>
 	<header>
-		<a href="signup.php"><img id ="signup" src="assets/signupbutton.svg" /></a>
+		<a href="signup.php"><img id ="logo" src="assets/logo.svg" /></a>
         <nav>
             <ul>
-            <li><a href = "dashboard.php">Home</a></li> 
+            <!--<li><a href = "dashboard.php">Home</a></li> 
             <li><a href = "edit-profile.php">Edit Profile</a></li>           	
-            <li><a href = "logout.php">Logout</a></li>
+            <li><a href = "logout.php">Logout</a></li>-->
             </ul>
+            <a class ="button" href="dashboard.php"><img src="assets/homebutton.svg" /></a>
+            <a class ="button" href="editprofile.php"><img src="assets/editprofilebutton.svg" /></a>          	
+            <a class ="button" href="logout.php"><img src="assets/logoutbutton.svg" /></a>
+            
         </nav>		
 	</header>
 	<main>
@@ -74,7 +78,8 @@ $row3 = $stmt3->fetch();
 				<a id="spell4"><img src="assets/spell4grey.svg" /></a>
 				<?php } ?>
 			</div>
-		<a class="link" href="">Cast Spell</a>
+		<!--<a class="link" href="">Cast Spell</a>-->
+		<a class="link" href="#"><img src="assets/castspellbutton.svg" /></a>
 	</main>
 	</body>
 </html>

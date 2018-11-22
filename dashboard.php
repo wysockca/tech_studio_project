@@ -43,13 +43,16 @@ $row4 = $stmt4->fetch();
 	</head>
 	<body>
 	<header>
-		<a href="dashboard.php"><img id="logo" src="assets/logo.svg" /></a>	
+		<a id="logo" href="dashboard.php"><img src="assets/logo.svg" /></a>	
         <nav>
-            <ul>
+            <!--<ul>
             <li><a href="dashboard.php">Home</a></li> 
             <li><a href="edit-profile.php">Edit Profile</a></li>            	
             <li><a href="logout.php">Logout</a></li>
-            </ul>
+        	</ul>-->
+            <a class ="button" href="dashboard.php"><img src="assets/homebutton.svg" /></a>
+            <a class ="button" href="editprofile.php"><img src="assets/editprofilebutton.svg" /></a>          	
+            <a class ="button" href="logout.php"><img src="assets/logoutbutton.svg" /></a> 
         </nav>		
 	</header>
 	<main>

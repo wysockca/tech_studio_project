@@ -17,6 +17,9 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
+		<header>
+		<a id="logo" href="dashboard.php"><img src="assets/logo.svg" /></a>
+		</header>
 		<h1>Login</h1>
 		<form action="process-login.php" method="POST">
 			Username:<input type="text" name="username" />

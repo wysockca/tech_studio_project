@@ -17,7 +17,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<header>
-		<a href="dashboard.php"><img id="logo" src="assets/logo.svg" /></a>	
+		<a class="logo" href="dashboard.php"><img id="logo" src="assets/logo.svg" /></a>	
 	</header>
 	<body>
 		<a href="signup.php"><img id ="signup" src="assets/signupbutton.svg" /></a>
