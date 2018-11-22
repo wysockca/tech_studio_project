@@ -16,8 +16,11 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
+	<header>
+		<a href="dashboard.php"><img id="logo" src="assets/logo.svg" /></a>	
+	</header>
 	<body>
-		<h1>Sign Up</h1>
+		<a href="signup.php"><img id ="signup" src="assets/signupbutton.svg" /></a>
 		<form action="process-signup.php" method="POST">
 			Name:<input type="text" name="name"/>
 			Email:<input type="email" name="email" />

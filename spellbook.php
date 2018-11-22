@@ -36,6 +36,7 @@ $row3 = $stmt3->fetch();
 	</head>
 	<body>
 	<header>
+		<a href="signup.php"><img id ="signup" src="assets/signupbutton.svg" /></a>
         <nav>
             <ul>
             <li><a href = "dashboard.php">Home</a></li> 
