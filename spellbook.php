@@ -47,33 +47,32 @@ $row3 = $stmt3->fetch();
 	<main>
 		<h1>My Spell Book</h1>
 		<div id="spellbook"><img src="assets/spellbook-01.svg" /></div>
-		
-		<?php if (($row["spell1"]) == '1'){ ?>
-			<!--<p id="spell1">Spell 1</p>-->
-			<a id="spell1"><img src="assets/spell1.svg" /></a>
-		<?php } else { ?>
-			<a id="spell1"><img src="assets/spell1grey.svg" /></a>
-			<?php }
+		<div id="spells">
+			<?php if (($row["spell1"]) == '1'){ ?>
+				<!--<p id="spell1">Spell 1</p>-->
+				<a id="spell1"><img src="assets/spell1.svg" /></a>
+			<?php } else { ?>
+				<a id="spell1"><img src="assets/spell1grey.svg" /></a>
+				<?php }
 
+				if (($row["spell2"]) == '1'){ ?>
+				<a id="spell2"><img src="assets/spell2.svg" /></a>
+			<?php } else { ?>
+				<a id="spell2"><img src="assets/spell2grey.svg" /></a>
+				<?php }
 
-			if (($row["spell2"]) == '1'){ ?>
-			<a id="spell2"><img src="assets/spell2.svg" /></a>
-		<?php } else { ?>
-			<a id="spell2"><img src="assets/spell2grey.svg" /></a>
-			<?php }
+				if (($row["spell3"]) == '1'){ ?>
+				<a id="spell3"><img src="assets/spell3.svg" /></a>
+			<?php } else { ?>
+				<a id="spell3"><img src="assets/spell3grey.svg" /></a>
+				<?php }
 
-			if (($row["spell3"]) == '1'){ ?>
-			<a id="spell3"><img src="assets/spell3.svg" /></a>
-		<?php } else { ?>
-			<a id="spell3"><img src="assets/spell3grey.svg" /></a>
-			<?php }
-
-		if (($row["spell4"]) == '1'){ ?>
-			<a id="spell4"><img src="assets/spell4.svg" /></a>
-		<?php } else { ?>
-			<a id="spell4"><img src="assets/spell4grey.svg" /></a>
-			<?php } ?>
-
+			if (($row["spell4"]) == '1'){ ?>
+				<a id="spell4"><img src="assets/spell4.svg" /></a>
+			<?php } else { ?>
+				<a id="spell4"><img src="assets/spell4grey.svg" /></a>
+				<?php } ?>
+			</div>
 		<a class="link" href="">Cast Spell</a>
 	</main>
 	</body>
