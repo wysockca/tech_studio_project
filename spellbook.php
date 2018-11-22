@@ -3,8 +3,7 @@
 session_start();
 
 if($_SESSION['logged-in'] == false){
-	echo("You are not allowed to view this page");
-	?><a href="login.php">Go to login</a><?php
+	header("Location: main.html");
 }else{
 
 $dsn = "mysql:host=localhost;dbname=wysockca_spellbook;charset=utf8mb4";
