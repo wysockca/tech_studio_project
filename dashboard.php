@@ -3,8 +3,7 @@
 session_start();
 
 if($_SESSION['logged-in'] == false){
-	echo("Please Sign up to begin your enchanted ascent!");
-	?><a href="login.php">Go to login</a><?php
+	header("Location: main.html");
 }else{
 
 $dsn = "mysql:host=localhost;dbname=wysockca_spellbook;charset=utf8mb4";
@@ -44,6 +43,7 @@ $row4 = $stmt4->fetch();
 	</head>
 	<body>
 	<header>
+		<a href="dashboard.php"><img id="logo" src="assets/logo.svg" /></a>	
         <nav>
             <ul>
             <li><a href="dashboard.php">Home</a></li> 
