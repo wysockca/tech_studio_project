@@ -1,0 +1,89 @@
+main{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+  	grid-gap: 10px;
+}
+
+#moon{
+	grid-column: 3 / 4;
+  	grid-row: 1;
+  	margin-left: 25px;
+}
+
+#userinfo{
+	grid-column: 1 / -1;
+	grid-row: 2;
+	align-self: center;
+}
+
+section{
+	grid-column: 1 / -1;
+	grid-row: 3;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  	grid-gap: 10px;
+}
+
+#tower{
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#avatar{
+	grid-column: 2;
+	grid-row: 1;
+	align-self: end;
+	justify-self: center;
+	width: 90%;
+}
+
+.link{
+	grid-column: 1 / -1;
+	grid-row: 4;
+	text-align: center;
+}
+
+h1{
+	grid-column: 1 / -1;
+	grid-row: 1;
+	align-self: center;
+}
+
+#spellbook{
+	grid-column: 1 / -1;
+  	grid-row: 2;
+}
+
+#spells{
+	margin-top:75px;
+
+	grid-column: 1 / -1;
+	grid-row: 2;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(3, 1fr);
+  	grid-gap: 20px;
+}
+
+#spell1{
+	grid-column: 1 / 2;
+  	grid-row: 1;
+  	align-self: end;
+}
+
+#spell2{
+	grid-column: 1 / 2;
+  	grid-row: 2;
+}
+
+#spell3{
+	grid-column: 2 / 3;
+  	grid-row: 1;
+}
+
+#spell4{
+	grid-column: 2 / 3;
+  	grid-row: 2;
+}
