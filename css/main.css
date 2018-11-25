@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Domine|Roboto+Condensed:300');
 
+@keyframes glowing {
+    0% {-webkit-filter: drop-shadow( -0px 0px -10px #FFBD00 );
+                filter: drop-shadow( -0px 0px -10px #FFBD00 ); stroke:#FFBD00;} 
+   50% {-webkit-filter: drop-shadow( -.75px 0px 10px #FFBD00 );
+                filter: drop-shadow( -.75px 0px 10px #FFBD00 ); stroke:#FFBD00;}
+   100% {-webkit-filter: drop-shadow( -0px 0px -10px #FFBD00 );
+                filter: drop-shadow( -0px 0px -10px #FFBD00 ); stroke:#FFBD00;}
+}
+
+@keyframes input {
+    0% {-webkit-filter: drop-shadow( -0px 0px -10px #5424A0 );
+                filter: drop-shadow( -0px 0px -10px #5424A0 ); stroke:#5424A0;} 
+   50% {-webkit-filter: drop-shadow( -.75px 0px 8px #5424A0 );
+                filter: drop-shadow( -.75px 0px 8px #5424A0 ); stroke:#5424A0;}
+   100% {-webkit-filter: drop-shadow( -0px 0px -10px #5424A0 );
+                filter: drop-shadow( -0px 0px -10px #5424A0 ); stroke:#5424A0;}
+}
+
 
 html{
 	height:100%;
@@ -8,7 +26,7 @@ html{
 body{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 20px;
-	color:#fff;
+	color:#FFBD00v;
 	/*grid layout setup*/
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -35,6 +53,7 @@ label{
 
 input {
     width: 100%;
+    animation: input 5000ms infinite;
 }
 
 /*layout styling*/
@@ -125,6 +144,7 @@ footer{
 
 #moon > img{
   	width: 70%;
+  	animation: glowing 5000ms infinite;
 }
 
 h1{
@@ -135,6 +155,7 @@ h1{
 #spells{
 	grid-column: 1 / -1;
   	grid-row: 3;
+  	animation: glowing 5000ms infinite;
 }
 
 main{
