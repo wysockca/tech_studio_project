@@ -43,7 +43,6 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 			</div>
 		</form>
 		<footer>
-			<p>This site uses cookies</p>
 		</footer>
 	</body>
 </html>
