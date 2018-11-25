@@ -39,7 +39,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<form class="learn" action="record-spell1.php" method="POST">
 			<div class="row1">
 				<input type="hidden" name="spell1" value="1" />
-				<input type="image" id="submit" alt="Login" src="assets/loginbutton.svg">
+				<input type="image" id="submit" alt="Login" src="assets/learnspellbutton.svg">
 			</div>
 		</form>
 		<footer>

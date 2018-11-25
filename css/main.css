@@ -184,6 +184,7 @@ main{
 .spell{
 	grid-column: 3 / 4;
 	grid-row: 3;
+	animation: glowing 5000ms infinite;
 }
 
 form{
