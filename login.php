@@ -15,6 +15,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<meta charset="UTF-8" />
 
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" media="screen and (max-width: 480px)" href="css/small.css" /> 
 		<link rel="stylesheet" type="text/css" href="css/bg2.css">
 	</head>
 	<body>
