@@ -1,0 +1,6 @@
+body{
+	background-image: url(../assets/starbg1.svg), linear-gradient(#156e8c, #4a469d 75%, #26215b);
+	background-repeat: no-repeat;
+	background-size: cover, 100% 100%;
+	background-color: #26215b;
+}

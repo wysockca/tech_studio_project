@@ -3,7 +3,7 @@
 session_start();
 
 if($_SESSION['logged-in'] == false){
-	header("Location: main.html");
+	header("Location: main.php");
 }else{
 
 $dsn = "mysql:host=localhost;dbname=wysockca_spellbook;charset=utf8mb4";
@@ -39,23 +39,20 @@ $row4 = $stmt4->fetch();
 		<title>Spellbound: Enchanted Ascent</title>
 		<meta charset="utf-8" />
 
-		<link rel="stylesheet" type="text/css" href="css/main.css"> 
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" media="screen and (max-width: 480px)" href="css/small.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/bg1.css">  
 	</head>
 	<body>
 	<header>
-		<a id="logo" href="dashboard.php"><img src="assets/logo.svg" /></a>	
-        <nav>
-            <!--<ul>
-            <li><a href="dashboard.php">Home</a></li> 
-            <li><a href="edit-profile.php">Edit Profile</a></li>            	
-            <li><a href="logout.php">Logout</a></li>
-        	</ul>-->
-            <a class ="button" href="dashboard.php"><img src="assets/homebutton.svg" /></a>
-            <a class ="button" href="editprofile.php"><img src="assets/editprofilebutton.svg" /></a>          	
-            <a class ="button" href="logout.php"><img src="assets/logoutbutton.svg" /></a> 
-        </nav>		
-	</header>
-	<main>
+			<a id="logo" href="dashboard.php"><img src="assets/logo.svg" /></a>
+			<nav>
+				<div class="flex-container">
+	            	<a class ="button" href="edit-profile.php"><img src="assets/editprofilebutton.svg" /></a>          	
+	            	<a class ="button" href="logout.php"><img src="assets/logoutbutton.svg" /></a>
+            	</div> 
+			</nav>
+		</header>
 		<div id="userinfo">
 			<h1><?php echo($row["username"]); ?></h1>
 			<h2>Current Level: <?php echo($row3["level"]); ?></h2>
@@ -65,8 +62,7 @@ $row4 = $stmt4->fetch();
 			<div id="tower"><img src="assets/<?php echo($row4["image"]); ?>" /></div>
 			<div id="avatar"><img id="avatar" src="assets/<?php echo($row3["image"]); ?>" /></div>
 		</section>
-		<a class="link" id="sb-link" href="spellbook.php">Spellbook</a>
-	</main>
+		<a class="link" id="sb-link" href="spellbook.php"><img src="assets/spellbookbutton2.svg" /></a>
 	<footer>
 		<p>This site uses cookies</p>
 	</footer>

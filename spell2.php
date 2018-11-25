@@ -2,7 +2,7 @@
 
 session_start();
 
-if ($_SESSION['logged-in'] == true;){
+if ($_SESSION['logged-in'] == true){
 
 $dsn = "mysql:host=localhost;dbname=wysockca_spellbook;charset=utf8mb4";
 $dbusername = "wysockca";
@@ -19,17 +19,31 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<meta charset="UTF-8" />
 
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" media="screen and (max-width: 480px)" href="css/small.css" />
+		<link rel="stylesheet" type="text/css" href="css/bg3.css">
 	</head>
 	<body>
 		<header>
-			<a href="dashboard.php"><img id="logo" src="assets/logo.svg" /></a>	
-		</header>
-		<h1>You found Spell 2!</h1>
-		<img src="assets/spell2.svg" />
-		<form action="record-spell2.php" method="POST">
-			<input type="hidden" name="spell2" value="1" />
-			<input type="submit" value="Learn Spell" />
+			<a id="logo" href="dashboard.php"><img src="assets/logo.svg" /></a>
+			<nav>
+			<div class="flex-container">        	
+            	<a class ="button" href="logout.php"><img src="assets/logoutbutton.svg" /></a>
+        	</div> 
+		</nav>
+		</header>		
+		<h1>You found Luna Crescente!</h1>
+		<div class="spell">
+			<img src="assets/spell2.svg" />
+		</div>
+		<form class="learn" action="record-spell2.php" method="POST">
+			<div class="row1">
+				<input type="hidden" name="spell1" value="1" />
+				<input type="image" id="submit" alt="Login" src="assets/loginbutton.svg">
+			</div>
 		</form>
+		<footer>
+			<p>This site uses cookies</p>
+		</footer>
 	</body>
 </html>
 

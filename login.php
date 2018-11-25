@@ -15,6 +15,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<meta charset="UTF-8" />
 
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/bg2.css">
 	</head>
 	<body>
 		<header>
@@ -22,9 +23,17 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		</header>
 		<h1>Login</h1>
 		<form action="process-login.php" method="POST">
-			Username:<input type="text" name="username" />
-			Password:<input type="password" name="password" />
-			<input type="submit" />
+			<div class="row1">
+				<label>Username:</label>
+				<input type="text" name="username" />
+			</div>
+			<div class="row2">
+				<label>Password:</label>
+				<input type="password" name="password" />
+			</div>
+			<div class="row3">
+				<input type="image" id="submit" alt="Login" src="assets/loginbutton.svg">
+			</div>
 		</form>
 	</body>
 </html>
