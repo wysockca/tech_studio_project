@@ -11,7 +11,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Login - Spellbound: Enchanted Ascent</title>
+		<title>Log In - Spellbound: Enchanted Ascent</title>
 		<meta charset="UTF-8" />
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 
@@ -23,7 +23,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<header>
 		<a id="logo" href="dashboard.php"><img src="assets/logo.svg" /></a>
 		</header>
-		<h1>Login</h1>
+		<h1>Log In</h1>
 		<form action="process-login.php" method="POST">
 			<div class="row1">
 				<label>Username:</label>
