@@ -1,1 +1,27 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 179 204.67"><defs><style>.cls-1,.cls-2,.cls-4{opacity:0.5;}.cls-1{fill:url(#radial-gradient);}.cls-2{fill:url(#radial-gradient-2);}.cls-3{fill:#df8c26;}.cls-4{fill:#ffd435;}</style><radialGradient id="radial-gradient" cx="89.59" cy="102.33" r="81.93" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c7842a"/><stop offset="0.15" stop-color="#cf8242" stop-opacity="0.81"/><stop offset="0.45" stop-color="#de7f6e" stop-opacity="0.47"/><stop offset="0.7" stop-color="#e97d8f" stop-opacity="0.21"/><stop offset="0.89" stop-color="#ef7ca3" stop-opacity="0.06"/><stop offset="1" stop-color="#f27baa" stop-opacity="0"/></radialGradient><radialGradient id="radial-gradient-2" cx="-878.43" cy="-523.73" r="94.61" gradientTransform="translate(-434.14 980.76) rotate(90)" xlink:href="#radial-gradient"/></defs><title>spell4</title><polygon class="cls-1" points="2 102.33 51.66 80.44 45.8 26.48 89.59 58.54 133.38 26.48 127.52 80.44 177.18 102.33 127.52 124.23 133.38 178.19 89.59 146.13 45.8 178.19 51.66 124.23 2 102.33"/><polygon class="cls-2" points="89.59 1.19 114.88 58.54 177.18 51.76 140.16 102.33 177.18 152.9 114.88 146.13 89.59 203.47 64.31 146.13 2 152.9 39.02 102.33 2 51.76 64.31 58.54 89.59 1.19"/><polygon class="cls-3" points="89.59 48.15 103.14 78.87 136.52 75.24 116.68 102.33 136.52 129.43 103.14 125.8 89.59 156.52 76.04 125.8 42.66 129.43 62.5 102.33 42.66 75.24 76.04 78.87 89.59 48.15"/><path class="cls-4" d="M87.3,104.84a16,16,0,0,1,4.92-20.26,17.75,17.75,0,1,0,14.35,28.2A16,16,0,0,1,87.3,104.84Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 179 204.7" style="enable-background:new 0 0 179 204.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#DE8B26;}
+	.st1{opacity:0.3;fill:url(#SVGID_1_);enable-background:new    ;}
+</style>
+<title>spell4</title>
+<polygon class="st0" points="92.2,43.9 106,75.5 140.3,71.8 119.9,99.7 140.3,127.5 105.9,123.7 92,155.3 78.1,123.7 43.8,127.4 
+	64.2,99.6 43.9,71.7 78.2,75.5 "/>
+<polygon class="st0" points="46.3,135.3 51.5,137.3 55.1,132.9 56,138.5 61.6,139.4 57.1,142.9 59.2,148.2 53.9,146.2 50.3,150.6 
+	49.5,145 43.9,144.1 48.3,140.5 "/>
+<polygon class="st0" points="138.8,88.9 147.2,92.2 152.8,85.2 154.1,94 162.9,95.4 156,101 159.2,109.3 150.9,106.1 145.3,113 
+	143.9,104.2 135.1,102.8 142.1,97.2 "/>
+<polygon class="st0" points="26.6,94.2 30.7,95.8 33.4,92.4 34,96.7 38.3,97.4 34.9,100.1 36.5,104.1 32.4,102.5 29.7,105.9 
+	29.1,101.6 24.8,101 28.2,98.2 "/>
+<radialGradient id="SVGID_1_" cx="121.1209" cy="91.9076" r="75.0121" gradientTransform="matrix(1 1.638414e-03 1.638414e-03 -1 -31.2315 194.8591)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#FFE000"/>
+	<stop  offset="0.1" style="stop-color:#FFE001;stop-opacity:0.94"/>
+	<stop  offset="0.29" style="stop-color:#FFDF02;stop-opacity:0.77"/>
+	<stop  offset="0.56" style="stop-color:#FFDD05;stop-opacity:0.49"/>
+	<stop  offset="0.9" style="stop-color:#FFDC08;stop-opacity:0.12"/>
+	<stop  offset="1" style="stop-color:#FFDB09;stop-opacity:0"/>
+</radialGradient>
+<circle class="st1" cx="90" cy="103.1" r="75"/>
+</svg>
