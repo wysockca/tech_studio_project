@@ -38,6 +38,7 @@ $row4 = $stmt4->fetch();
 	<head>
 		<title>Spellbound: Enchanted Ascent</title>
 		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
 
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" media="screen and (max-width: 480px)" href="css/small.css" /> 

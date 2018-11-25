@@ -3,7 +3,7 @@
 session_start();
 
 if($_SESSION['logged-in'] == false){
-	header("Location: main.html");
+	header("Location: main.php");
 }else{
 
 $dsn = "mysql:host=localhost;dbname=wysockca_spellbook;charset=utf8mb4";
@@ -30,6 +30,7 @@ $row3 = $stmt3->fetch();
 	<head>
 		<title>Spellbook</title>
 		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
 
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" media="screen and (max-width: 480px)" href="css/small.css" /> 
