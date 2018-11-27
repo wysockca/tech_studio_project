@@ -13,13 +13,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 $id = $_SESSION['id'];
 
-$stmt = $pdo->prepare("SELECT * FROM `userinfo` WHERE `id` = '$id'");
-$stmt->execute();
-$row = $stmt->fetch();
-
-$level = $row["level_id"];
-
-$stmt3 = $pdo->prepare("SELECT * FROM `levels` WHERE `id` = '$level'");
+$stmt3 = $pdo->prepare("SELECT * FROM `userinfo` WHERE `id` = '$id'");
 $stmt3->execute();
 $row3 = $stmt3->fetch();
 
@@ -48,20 +42,20 @@ $row3 = $stmt3->fetch();
 	</header>
 	<h1>My Spell Book</h1>
 	<div id="spells">
-		<?php if (($row["spell1"]) == '1'){ ?>
+		<?php if (($row3["level_id"]) == '1'){ ?>
 			<!--<p id="spell1">Spell 1</p>-->
 			<a id="spellbook"><img src="assets/spellbook1.svg" /></a>
 		<?php } 
 
-		else if (($row["spell2"]) == '1'){ ?>
+		else if (($row3["level_id"]) == '2'){ ?>
 			<a id="spellbook"><img src="assets/spellbook2.svg" /></a>
 		<?php } 
 
-		else if (($row["spell3"]) == '1'){ ?>
+		else if (($row3["level_id"]) == '3'){ ?>
 			<a id="spellbook"><img src="assets/spellbook3.svg" /></a>
 		<?php } 
 
-		else if (($row["spell4"]) == '1'){ ?>
+		else if (($row3["level_id"]) == '4'){ ?>
 			<a id="spellbook"><img src="assets/spellbook4.svg" /></a>
 		<?php } 
 
@@ -70,7 +64,7 @@ $row3 = $stmt3->fetch();
 			<?php } ?>
 		</div>
 
-		<a class="link" href="dashboard.php"><img src="assets/castspellbutton.svg" /></a>
+		<a class="link" href="dashboard"><img src="assets/castspellbutton.svg" /></a>
 	</body>
 	<footer>
 		<p>This site uses cookies</p>
