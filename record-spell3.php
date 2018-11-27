@@ -16,5 +16,5 @@ $stmt = $pdo->prepare("UPDATE `userinfo` SET `spell3` = '$spell3', `level_id` = 
 $stmt->execute();
 
 
-header("Location: dashboard.php");
+header("Location: spellbook.php");
 ?>
