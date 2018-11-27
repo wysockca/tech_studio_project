@@ -42,7 +42,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 				<input type="password" name="password" />
 			</div>
 			<div class="row5">
-				<input type="image" id="submit" alt="Login" src="assets/loginbutton.svg">
+				<input type="image" id="submit" alt="Login" src="assets/submitbutton.svg">
 			</div>
 		</form>
 	</body>
