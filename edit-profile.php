@@ -52,7 +52,7 @@ $row = $stmt->fetch();
 				<input type='password' name='password' value="<?php echo($row["password"]); ?>"/>
 			</div>
 			<div class="row4">
-				<input type="image" id="submit" alt="Login" src="assets/loginbutton.svg">
+				<input type="image" id="submit" alt="Login" src="assets/submitbutton.svg">
 			</div>
 		</form>
 		<footer>
