@@ -1,0 +1,33 @@
+body {
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(50deg, #23D5AB, #223CAA, #E73C7E);
+    background-size: cover, 100% 100%;
+    background-image: url(../assets/starbg2.svg);
+    background-repeat: no-repeat;
+    animation: Gradient 12s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+
+@keyframes opacity {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: .1
+    }
+    100% {
+        opacity: 1
+    }
+
+}
