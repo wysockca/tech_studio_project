@@ -55,9 +55,6 @@ $row = $stmt->fetch();
 				<input type="image" id="submit" alt="Login" src="assets/submitbutton.svg">
 			</div>
 		</form>
-		<footer>
-			<p>This site uses cookies</p>
-		</footer>
 	</body>
 </html>
 

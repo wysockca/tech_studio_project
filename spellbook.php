@@ -66,8 +66,5 @@ $row3 = $stmt3->fetch();
 
 		<a class="link" href="dashboard.php"><img src="assets/castspellbutton.svg" /></a>
 	</body>
-	<footer>
-		<p>This site uses cookies</p>
-	</footer>
 </html>
 <?php } ?>

@@ -64,9 +64,6 @@ $row4 = $stmt4->fetch();
 			<div id="avatar"><img id="avatar" src="assets/<?php echo($row3["image"]); ?>" /></div>
 		</section>
 		<a class="link" id="sb-link" href="spellbook.php"><img src="assets/spellbookbutton2.svg" /></a>
-	<footer>
-		<p>This site uses cookies</p>
-	</footer>
 	</body>
 </html>
 
