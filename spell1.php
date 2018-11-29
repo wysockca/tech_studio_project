@@ -34,7 +34,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		</header>		
 		<h1>You found Stella!</h1>
 		<div class="spell">
-			<img src="assets/spell1.svg" />
+			<img class="spellimg" src="assets/spell1.svg" />
 		</div>
 		<form class="learn" action="record-spell1.php" method="POST">
 			<div class="row1">

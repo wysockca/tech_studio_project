@@ -34,7 +34,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		</header>		
 		<h1>You found Luna Crescente!</h1>
 		<div class="spell">
-			<img src="assets/spell2.svg" />
+			<img class="spellimg" src="assets/spell2.svg" />
 		</div>
 		<form class="learn" action="record-spell2.php" method="POST">
 			<div class="row1">

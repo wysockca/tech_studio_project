@@ -27,7 +27,7 @@ if (window.matchMedia("(max-width: 480px)").matches) {
             castspell.style.display = "block";
         };
 
-    var spell = document.getElementsByClassName("spell");
+    var spell = document.getElementsByClassName("spellimg");
 
         spell.addEventListener("touchstart", playsparkle, false);
 
@@ -108,7 +108,7 @@ if (window.matchMedia("(max-width: 480px)").matches) {
         };
 
 
-    var spell = document.getElementsByClassName("spell");
+    var spell = document.getElementsByClassName("spellimg");
 
         spell.addEventListener("click", playsparkle, false);
 
