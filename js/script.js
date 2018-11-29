@@ -1,7 +1,7 @@
 console.log("connected");
 
 
-var spellBtn = document.getElementsByClassName("spellBtn");
+var spellBtn = document.getElementById("spells");
 
 spellBtn.addEventListener("click", playsparkle, false);
 
@@ -23,6 +23,8 @@ function sound(src) {
     }
 }
 	sound.play();
+    document.getElementById("castspell");
+    castspell.style.display = "block";
 };
 
 

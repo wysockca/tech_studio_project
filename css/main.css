@@ -137,6 +137,10 @@ section{
 	padding-bottom: 40px;
 }
 
+#castspell{
+	display: none;
+}
+
 footer{
 	grid-column: 1 / -1;
 	grid-row: 5;
