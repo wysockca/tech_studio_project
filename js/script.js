@@ -27,9 +27,9 @@ function sound(src) {
 
 
 
-var moon = document.getElementById("moon");
+var avatar = document.getElementById("avatar");
 
-moon.addEventListener("mouseenter", playshine, false);
+avatar.addEventListener("click", playshine, false);
 
 function playshine(e){
 var sound = new sound("assets/shine.mp3");
