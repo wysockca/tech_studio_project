@@ -141,9 +141,9 @@ section{
 	display: none;
 }
 
-.spellButton{
+/*.spellButton{
 	display: none;
-}
+}*/
 
 footer{
 	grid-column: 1 / -1;
