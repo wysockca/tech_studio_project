@@ -44,19 +44,39 @@ $row3 = $stmt3->fetch();
 	<div id="spells">
 		<?php if (($row3["level_id"]) == '1'){ ?>
 			<!--<p id="spell1">Spell 1</p>-->
-			<a id="spellbook"><img src="assets/spellbook1.svg" /></a>
+				<a id="spellbook"><img src="assets/spellbook1.svg" /></a>
+			<div class="spellBtn" id="spellBtn1">
+			</div>
 		<?php } 
 
 		else if (($row3["level_id"]) == '2'){ ?>
 			<a id="spellbook"><img src="assets/spellbook2.svg" /></a>
+			<div class="spellBtn" id="spellBtn1">
+			</div>
+			<div class="spellBtn" id="spellBtn2">
+			</div>
 		<?php } 
 
 		else if (($row3["level_id"]) == '3'){ ?>
 			<a id="spellbook"><img src="assets/spellbook3.svg" /></a>
+			<div class="spellBtn" id="spellBtn1">
+			</div>
+			<div class="spellBtn" id="spellBtn2">
+			</div>
+			<div class="spellBtn" id="spellBtn3">
+			</div>
 		<?php } 
 
 		else if (($row3["level_id"]) == '4'){ ?>
 			<a id="spellbook"><img src="assets/spellbook4.svg" /></a>
+			<div class="spellBtn" id="spellBtn1">
+			</div>
+			<div class="spellBtn" id="spellBtn2">
+			</div>
+			<div class="spellBtn" id="spellBtn3">
+			</div>
+			<div class="spellBtn" id="spellBtn4">
+			</div>
 		<?php } 
 
 		else { ?>
