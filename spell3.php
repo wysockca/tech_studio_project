@@ -42,6 +42,7 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 				<input type="image" class="spellButton" id="submit" alt="submit" src="assets/learnspellbutton.svg">
 			</div>
 		</form>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
 
