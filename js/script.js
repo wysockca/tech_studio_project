@@ -1,9 +1,9 @@
 console.log("connected");
 
 
-var magic = document.getElementById("magic");
+var spellBtn = document.getElementsByClassName("spellBtn");
 
-magic.addEventListener("click", playsparkle, false);
+spellBtn.addEventListener("click", playsparkle, false);
 
 function playsparkle(e){
 	var sound = new sound("assets/sparkle.mp3");
@@ -22,7 +22,6 @@ function sound(src) {
         this.sound.pause();
     }
 }
-
 	sound.play();
 };
 
