@@ -1,11 +1,8 @@
 body {
-    width: 100vw;
-    height: 90vh;
-    background-size: cover, 100% 100%;
-    animation: Gradient 12s ease infinite;
-    background-image: url(../assets/starbg2.svg), linear-gradient(10deg, #23D5AB, #223CAA, #E73C7E);
+    background-image: url(../assets/starbg3.svg), linear-gradient(#99024B 15%, #223CAA, #00BAB5);
     background-repeat: no-repeat;
     background-size: cover, 100% 100%;
+    background-color: #00BAB5;
 }
 
 @keyframes glowing {
@@ -15,17 +12,4 @@ body {
                 filter: drop-shadow( -.75px 0px 10px #FFBD00 ); stroke:#FFBD00;}
    100% {-webkit-filter: drop-shadow( -0px 0px -10px #FFBD00 );
                 filter: drop-shadow( -0px 0px -10px #FFBD00 ); stroke:#FFBD00;}
-}
-
-@keyframes opacity {
-    0% {
-        opacity: 1
-    }
-    50% {
-        opacity: .1
-    }
-    100% {
-        opacity: 1
-    }
-
 }

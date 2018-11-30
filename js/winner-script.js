@@ -26,12 +26,18 @@ if (window.matchMedia("(max-width: 480px)").matches) {
             }
         }
         sound.play();
-        win.innerHTML = "Congratulations! You have mastered magic!";
+        var pTag = document.createElement("p");
+        var text = document.createTextNode("Congratulations! You have mastered magic!");
+        pTag.appendChild(text);
+
+        win.innerHTML = '';
+        win.appendChild(pTag);
         };
 
     } else {
 
         var avatar = document.getElementById("kitty");
+        var win = document.getElementById("userinfo");
 
         avatar.addEventListener("click", playshine, false);
 
@@ -53,6 +59,13 @@ if (window.matchMedia("(max-width: 480px)").matches) {
             }
         }
         sound.play();
+
+        var hTag = document.createElement("h1");
+        var text = document.createTextNode("Congratulations! You have mastered magic!");
+        hTag.appendChild(text);
+
+        win.innerHTML = '';
+        win.appendChild(hTag);
         };
 }
 }

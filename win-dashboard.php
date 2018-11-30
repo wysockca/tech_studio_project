@@ -45,7 +45,6 @@ $row4 = $stmt4->fetch();
 		<link rel="stylesheet" type="text/css" href="css/winner.css"> 
 	</head>
 	<body>
-		<div class="bg">
 	<header>
 			<a id="logo" href="dashboard.php"><img src="assets/logo.svg" /></a>
 			<nav>
@@ -62,10 +61,9 @@ $row4 = $stmt4->fetch();
 		<div id="moon"><img src="assets/moon.svg" /></div>
 		<section>
 			<div id="tower"><img src="assets/<?php echo($row4["image"]); ?>" /></div>
-			<div id="avatar"><img id="avatar" src="assets/<?php echo($row3["image"]); ?>" /></div>
+			<div id="avatar"><img id="kitty" style="animation: glowing 5000ms infinite;" src="assets/<?php echo($row3["image"]); ?>" /></div>
 		</section>
 		<a class="link" id="sb-link" href="spellbook.php"><img src="assets/spellbookbutton2.svg" /></a>
-	</div>
 		<script type="text/javascript" src="js/winner-script.js"></script>
 	</body>
 </html>
