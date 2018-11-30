@@ -64,9 +64,12 @@ $row3 = $stmt3->fetch();
 			<?php } ?>
 		</div>
 	</div>
-
-		<a class="link" id="castspell" href="dashboard.php"><img src="assets/castspellbutton.svg" /></a>
+		<?php if (($row3["level_id"]) == '4'){ ?>
+		<a class="link" id="castspell" href="win-dashboard.php"><img src="assets/castspellbutton.svg" /></a>
+	<?php } else { ?> <a class="link" id="castspell" href="dashboard.php"><img src="assets/castspellbutton.svg" /></a>
+<?php } ?>
 		<script type="text/javascript" src="js/script.js"></script>
+	}
 	</body>
 </html>
 <?php } ?>
