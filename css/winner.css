@@ -1,23 +1,21 @@
 body {
     width: 100vw;
     height: 90vh;
-    background: linear-gradient(50deg, #23D5AB, #223CAA, #E73C7E);
     background-size: cover, 100% 100%;
-    background-image: url(../assets/starbg2.svg);
-    background-repeat: no-repeat;
     animation: Gradient 12s ease infinite;
+    background-image: url(../assets/starbg2.svg), linear-gradient(10deg, #23D5AB, #223CAA, #E73C7E);
+    background-repeat: no-repeat;
+    background-size: cover, 100% 100%;
 }
 
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
+@keyframes glowing {
+    0% {-webkit-filter: drop-shadow( -0px 0px -10px #FFBD00 );
+                filter: drop-shadow( -0px 0px -10px #FFBD00 ); stroke:#FFBD00;} 
+   50% {-webkit-filter: drop-shadow( -.75px 0px 10px #FFBD00 );
+                filter: drop-shadow( -.75px 0px 10px #FFBD00 ); stroke:#FFBD00;}
+   100% {-webkit-filter: drop-shadow( -0px 0px -10px #FFBD00 );
+                filter: drop-shadow( -0px 0px -10px #FFBD00 ); stroke:#FFBD00;}
+}
 
 @keyframes opacity {
     0% {
