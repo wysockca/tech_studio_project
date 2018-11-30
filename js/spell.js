@@ -1,16 +1,13 @@
 console.log("connected");
         window.onload = function(){
+        if (window.matchMedia("(max-width: 480px)").matches) {
+        	var spell = document.getElementById("spellimg");
 
-if (window.matchMedia("(max-width: 480px)").matches) {
+        spell.addEventListener("touchstart", playspankle, false);
 
-        var avatar = document.getElementById("kitty");
-        var win = document.getElementById("userinfo");
+        function playspankle(e){
+            var sound = new sound("assets/sparkle.mp3");
 
-        avatar.addEventListener("touchstart", playshine, false);
-
-        function playshine(e){
-        var sound = new sound("assets/shine.mp3");
-        console.log("clicked");
         function sound(src) {
             this.sound = document.createElement("audio");
             this.sound.src = src;
@@ -25,24 +22,17 @@ if (window.matchMedia("(max-width: 480px)").matches) {
                 this.sound.pause();
             }
         }
-        sound.play();
-        var hTag = document.createElement("h1");
-        var text = document.createTextNode("Congratulations! You have mastered magic!");
-        hTag.appendChild(text);
-
-        win.innerHTML = '';
-        win.appendChild(hTag);
+            sound.play();
+            document.getElementById("spellButton");
+            spellButton.style.display = "block";
         };
-
     } else {
+        var spell = document.getElementById("spellimg");
 
-        var avatar = document.getElementById("kitty");
-        var win = document.getElementById("userinfo");
+        spell.addEventListener("click", playspankle, false);
 
-        avatar.addEventListener("click", playshine, false);
-
-        function playshine(e){
-        var sound = new sound("assets/shine.mp3");
+        function playspankle(e){
+            var sound = new sound("assets/sparkle.mp3");
 
         function sound(src) {
             this.sound = document.createElement("audio");
@@ -58,14 +48,9 @@ if (window.matchMedia("(max-width: 480px)").matches) {
                 this.sound.pause();
             }
         }
-        sound.play();
-
-        var hTag = document.createElement("h1");
-        var text = document.createTextNode("Congratulations! You have mastered magic!");
-        hTag.appendChild(text);
-
-        win.innerHTML = '';
-        win.appendChild(hTag);
+            sound.play();
+            document.getElementById("spellButton");
+            spellButton.style.display = "block";
         };
-}
+    }
 }

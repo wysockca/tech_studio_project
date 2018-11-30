@@ -39,10 +39,10 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<form class="learn" action="record-spell4.php" method="POST">
 			<div class="row1">
 				<input type="hidden" name="spell1" value="1" />
-				<input type="image" class="spellButton" id="submit" alt="Login" src="assets/learnspellbutton.svg">
+				<input type="image" id="spellButton" id="submit" alt="Login" src="assets/learnspellbutton.svg">
 			</div>
 		</form>
-		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/spell.js"></script>
 	</body>
 </html>
 
