@@ -15,9 +15,10 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 		<meta charset="UTF-8" />
 
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/bg2.css">
 	</head>
 	<body>
-		<p>Congratulations! You've successfully signed up.</p>
-		<a href="login.php">Login</a>
+		<h1>Congratulations! You've successfully signed up.</h1>
+		<a class="link" href="login.php"><img src="assets/loginbutton.svg" /></a>
 	</body>
 </html>
