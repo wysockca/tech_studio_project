@@ -19,6 +19,6 @@ $pdo = new PDO($dsn, $dbusername, $dbpassword);
 	</head>
 	<body>
 		<h1>Congratulations! You've successfully signed up.</h1>
-		<a class="link" href="login.php"><img src="assets/loginbutton.svg" /></a>
+		<a class="link" id="loginBtn" href="login.php"><img src="assets/loginbutton.svg" /></a>
 	</body>
 </html>
